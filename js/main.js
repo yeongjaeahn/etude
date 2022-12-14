@@ -26,7 +26,7 @@ $(function () {
 
     e.forEach((박스) => {
       if (박스.isIntersecting) {
-        박스.target.style.bottom = 220 + 'px';
+        박스.target.style.bottom = 15 + '%';
         박스.target.style.opacity = 1;
       } else {
         박스.target.style.opacity = 0;
@@ -41,6 +41,10 @@ $(function () {
   observer.observe(text4);
   observer.observe(text5);
   observer.observe(text6);
+
+  $('.menu-btn').click(function () {
+    $('.menu-modal-wrap').toggleClass('on');
+  });
 });
 
 // ----------------비주얼 슬라이드 끝
