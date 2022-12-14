@@ -14,6 +14,7 @@ $(function () {
   });
 
   // 비주얼 슬라이드 텍스트 ---------------------
+
   let text1 = document.querySelector('.swiper-text1');
   let text2 = document.querySelector('.swiper-text2');
   let text3 = document.querySelector('.swiper-text3');
@@ -25,10 +26,11 @@ $(function () {
 
     e.forEach((박스) => {
       if (박스.isIntersecting) {
+        박스.target.style.bottom = 220 + 'px';
         박스.target.style.opacity = 1;
-        박스.target.style.bottom = 300 + 'px';
       } else {
         박스.target.style.opacity = 0;
+        박스.target.style.bottom = 0;
       }
     });
   });
@@ -40,4 +42,5 @@ $(function () {
   observer.observe(text5);
   observer.observe(text6);
 });
+
 // ----------------비주얼 슬라이드 끝

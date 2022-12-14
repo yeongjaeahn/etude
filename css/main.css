@@ -1,16 +1,34 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h2 {
+  color: #111;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+p {
+  color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+li {
+  list-style: none;
+}
 html,
 body {
-  position: relative;
+  width: 100%;
   height: 100%;
 }
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.main-visual {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .swiper {
@@ -48,7 +66,7 @@ body {
 }
 .swiper-scrollbar {
   width: 30%;
-  background-color: rgba(255, 255, 255, 0.212);
+  background-color: rgba(255, 255, 255, 0.086);
 }
 .swiper-scrollbar-drag {
   background-color: #eee;
@@ -58,50 +76,82 @@ body {
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
   left: 1%;
-  bottom: 100px;
+  bottom: 130px;
   z-index: 50;
   height: 5px;
   width: 98%;
 }
-.swiper-text1 {
+
+.swiper-text {
   position: absolute;
-  left: 100px;
+  left: 150px;
   bottom: 0;
   transition: all 2s;
   opacity: 0;
+  text-align: left;
 }
-.swiper-text2 {
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  transition: all 1s;
-  opacity: 0;
+.swiper-text h2 {
+  font-size: 45px;
+  font-weight: 700;
+
+  margin: 0;
 }
-.swiper-text3 {
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  transition: all 1s;
-  opacity: 0;
+.swiper-text p {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 700;
 }
-.swiper-text4 {
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  transition: all 1s;
-  opacity: 0;
+
+/* fix-btn */
+
+.fix-btn {
+  background-color: #ef426f;
+  padding: 14px 16px;
+  transform: rotate(270deg);
+  transform-origin: right bottom;
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  display: inline-block;
+  right: 0;
+  top: 40%;
 }
-.swiper-text5 {
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  transition: all 1s;
-  opacity: 0;
+.fix-btn a {
+  color: #f5e2e2;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
 }
-.swiper-text6 {
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  transition: all 1s;
-  opacity: 0;
+
+/* header */
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.header-wrap {
+  display: flex;
+  padding: 33px 60px;
+  align-items: center;
+}
+.menu-list {
+  flex: none;
+  display: flex;
+  padding: 40px 50px 0 50px;
+}
+.menu-list li {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.search-menu {
+  padding: 50px 0 0 50px;
+  margin-left: auto;
+}
+.search-menu span {
+  margin-left: 20px;
+}
+.search-menu img {
+  width: 35px;
 }
