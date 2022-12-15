@@ -315,6 +315,27 @@ header {
   margin-left: 0;
   width: 100%;
 }
+/* ----------------best-item- section */
+.best-items {
+  display: flex;
+  width: 100%;
+  padding: 150px 0;
+  background-color: #fbf3eb;
+}
+
+.best-item-wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.item {
+  text-align: center;
+}
+.best-item-wrap img {
+  width: 100%;
+}
 
 /* respone  */
 @media (max-width: 1024px) {
