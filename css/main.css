@@ -157,6 +157,8 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  transition: all 1s;
+  padding-bottom: 50px;
 }
 
 .header-wrap {
@@ -171,14 +173,17 @@ header {
   margin-left: 50px;
   position: relative;
 }
-.menu-list li {
+.menu-list > li {
   font-size: 20px;
   font-weight: 700;
   padding: 10px 30px 0 10px;
   margin: 0 10px;
 }
+.menu-list > li :hover {
+  color: #ef426f;
+}
 
-.menu-list li:first-child::after {
+.menu-list > li:first-child::after {
   content: 'NEW';
   font-size: 14px;
   display: block;
@@ -187,6 +192,7 @@ header {
   left: 120px;
   color: #ef426f;
 }
+
 .search-menu {
   padding: 50px 0 0 50px;
   margin-left: auto;
@@ -196,6 +202,20 @@ header {
 }
 .search-menu img {
   width: 35px;
+}
+/* 2차원메뉴 */
+
+.menu-list > li > ul {
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+.menu-list > li:hover > ul {
+  display: block;
+}
+.menu-list ul li {
+  float: left;
+  padding: 35px 30px 0 0px;
 }
 
 /* menu-modal */

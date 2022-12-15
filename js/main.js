@@ -74,4 +74,28 @@ $(function () {
   });
 
   // heade 찾기 , 메뉴 아이콘 close 생성,제거 스위치  로직 끝 ------------
+
+  // header hover 시 백그라운드 컬러 변경
+  $('.menu-list').hover(
+    function () {
+      $('header').css({
+        backgroundColor: 'rgba(255, 255, 255, 0.65)',
+        backdropFilter: 'blur(12px)',
+      });
+    },
+    function () {
+      $('header').css({
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        backdropFilter: 'blur(0px)',
+      });
+    }
+  );
+  // $('.menu-list li ul').hover(
+  //   function () {
+  //     $('header').css({ backgroundColor: 'rgba(255, 255, 255, 0.65)' });
+  //   },
+  //   function () {
+  //     $('header').css({ backgroundColor: 'rgba(255, 255, 255, 0)' });
+  //   }
+  // );
 });
