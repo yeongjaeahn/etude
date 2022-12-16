@@ -60,6 +60,7 @@ $(function () {
 
   $('.search-btn').click(function () {
     $('.search-wrap').fadeToggle();
+
     $('.menu-modal-wrap').css({ display: 'none' });
     var src =
       $('.search-btn a img').attr('src') === 'img/header/search.png'
@@ -90,12 +91,40 @@ $(function () {
       });
     }
   );
-  // $('.menu-list li ul').hover(
+
+  // section3 animation
+
+  let text = document.querySelector('.section3-contain');
+
+  let observer2 = new IntersectionObserver((e) => {
+    console.log('E', e);
+
+    e.forEach((박스) => {
+      if (박스.isIntersecting) {
+        박스.target.style.opacity = 1;
+      } else {
+        박스.target.style.opacity = 0;
+      }
+    });
+  });
+
+  observer2.observe(text);
+
+  // section4 상품 hover 시 이미지 변경
+  // $('.product-img').hover(
   //   function () {
-  //     $('header').css({ backgroundColor: 'rgba(255, 255, 255, 0.65)' });
+  //     $('.product-hover').fadeIn();
+  //     $('.product-hover img').css({
+  //       transition: 'all 1s',
+  //       transform: 'scale(1.2, 1.2)',
+  //     });
   //   },
   //   function () {
-  //     $('header').css({ backgroundColor: 'rgba(255, 255, 255, 0)' });
+  //     $('.product-hover').fadeOut();
+  //     $('.product-hover img').css({
+  //       transition: 'all 1s',
+  //       transform: 'scale(1, 1)',
+  //     });
   //   }
   // );
 });
