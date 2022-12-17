@@ -110,6 +110,46 @@ $(function () {
 
   observer2.observe(text);
 
+  // scrioll 에 따른 헤더 컨트롤
+  var scroll_pos = 0;
+
+  $(document).scroll(function () {
+    scroll_pos = $(this).scrollTop();
+
+    if (scroll_pos > 500) {
+      $('header ul').css({ opacity: 0, transition: 'all 1s' });
+      $('.menu-list').hover(
+        function () {
+          $('header').css({
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            backdropFilter: 'blur(0px)',
+          });
+        },
+        function () {
+          $('header').css({
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            backdropFilter: 'blur(0px)',
+          });
+        }
+      );
+    } else {
+      $('header ul').css({ opacity: 1 });
+      $('.menu-list').hover(
+        function () {
+          $('header').css({
+            backgroundColor: 'rgba(255, 255, 255, 0.65)',
+            backdropFilter: 'blur(12px)',
+          });
+        },
+        function () {
+          $('header').css({
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            backdropFilter: 'blur(0px)',
+          });
+        }
+      );
+    }
+  });
   // section4 상품 hover 시 이미지 변경
   // $('.product-img').hover(
   //   function () {
