@@ -560,17 +560,6 @@ header {
   height: 100%;
   position: relative;
 }
-.section4::after {
-  content: '';
-  height: 1px;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #b2b1b184;
-
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
 
 .section4-intro {
   display: flex;
@@ -597,10 +586,6 @@ header {
 }
 .section4 .product-wrap {
   display: flex;
-
-  position: static;
-  width: 100%;
-  height: 100%;
 }
 
 .section4 .product-wrap .product-banner {
@@ -748,24 +733,6 @@ header {
 }
 /*-------------------- respone ---------------------- */
 @media (max-width: 1024px) {
-  .section5 {
-    overflow-x: hidden;
-  }
-  .section5-items {
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    overflow-x: scroll;
-  }
-
-  .section5-item {
-    position: relative;
-    margin-bottom: 40px;
-    margin-right: 10px;
-    min-width: 380px;
-  }
   .swiper-slide-banner1 {
     background-image: url(../img/main-visual/respone/1.jpg);
   }
@@ -932,6 +899,25 @@ header {
   }
 
   /* seection4 끝 */
+  /* section5 */
+  .section5 {
+    overflow-x: hidden;
+  }
+  .section5-items {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    overflow-x: scroll;
+  }
+
+  .section5-item {
+    position: relative;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    min-width: 380px;
+  }
 }
 @media (max-width: 728px) {
   .swiper-slide-banner1 {

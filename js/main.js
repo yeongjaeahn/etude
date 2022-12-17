@@ -117,7 +117,11 @@ $(function () {
     scroll_pos = $(this).scrollTop();
 
     if (scroll_pos > 500) {
-      $('header ul').css({ opacity: 0, transition: 'all 1s' });
+      $('header ul').css({
+        opacity: 0,
+        transition: 'all 1s',
+        visibility: 'hidden',
+      });
       $('.menu-list').hover(
         function () {
           $('header').css({
@@ -133,7 +137,7 @@ $(function () {
         }
       );
     } else {
-      $('header ul').css({ opacity: 1 });
+      $('header ul').css({ opacity: 1, visibility: 'visible' });
       $('.menu-list').hover(
         function () {
           $('header').css({
@@ -142,6 +146,7 @@ $(function () {
           });
         },
         function () {
+          $('header ul').css({ opacity: 1, cursor: 'none' });
           $('header').css({
             backgroundColor: 'rgba(255, 255, 255, 0)',
             backdropFilter: 'blur(0px)',
