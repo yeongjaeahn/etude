@@ -140,6 +140,7 @@ $(function () {
       $('header ul').css({ opacity: 1, visibility: 'visible' });
       $('.menu-list').hover(
         function () {
+          $('header ul').css({ opacity: 1, visibility: 'visible' });
           $('header').css({
             backgroundColor: 'rgba(255, 255, 255, 0.65)',
             backdropFilter: 'blur(12px)',
