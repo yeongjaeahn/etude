@@ -1028,6 +1028,11 @@ header {
   display: none;
   font-size: 14px;
 }
+/* footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 16px 16px 66px 16px;
+}
 /*-------------------- respone ---------------------- */
 @media (max-width: 1024px) {
   .marquee span {
@@ -1350,10 +1355,13 @@ header {
   .header-wrap {
     display: flex;
     padding: 10px;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-end;
   }
   .header-wrap .logo img {
-    height: 10vw;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
   }
   .menu-list {
     display: none;
