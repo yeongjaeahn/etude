@@ -1081,6 +1081,10 @@ footer {
     display: none;
   }
   /* header */
+  .header {
+    background-color: 'rgba(255, 255, 255, 0.6)';
+    backdrop-filter: 'blur(12px)';
+  }
   .header-wrap {
     display: flex;
     padding: 10px;
