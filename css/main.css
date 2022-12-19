@@ -1095,6 +1095,8 @@ footer {
     margin-left: auto;
     padding: 25px 0 0 0;
     /* width: 100%; */
+
+    /* padding: 0 0 0 50px; */
   }
   .search-menu img {
     width: 7vw;
@@ -1354,6 +1356,9 @@ footer {
     padding: 10px;
     /* align-items: center; */
     align-items: flex-end;
+  }
+  .header-wrap .logo {
+    width: 30%;
   }
   .header-wrap .logo img {
     display: block;
