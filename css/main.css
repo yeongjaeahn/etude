@@ -3,6 +3,7 @@
   font-family: 'cooper';
   src: url('../font/CooperBlackStd.otf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -223,7 +224,7 @@ header {
 }
 .menu-list ul li {
   float: left;
-  padding: 35px 30px 0 0px;
+  padding: 20px 30px 0 0px;
 }
 
 /* menu-modal */
@@ -1029,12 +1030,119 @@ header {
   font-size: 14px;
 }
 /* footer */
-footer {
+.footer {
   background-color: #f7f7f7;
-  padding: 16px 16px 66px 16px;
+  padding: 70px 100px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-logo {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer-logo > div {
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  width: 200px;
+}
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li {
+  color: #777;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #222;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #e91e63;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #f2c6cf;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #333;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #e91e63;
+}
+.fab {
+  width: 40px;
+}
+footer .box {
+  padding-top: 80px;
+}
+footer .box_wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  text-align: center;
 }
 /*-------------------- respone ---------------------- */
 @media (max-width: 1024px) {
+  .footer {
+    background-color: #f7f7f7;
+    padding: 70px 50px;
+  }
+  footer .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .footer-col {
+    width: 40%;
+    padding: 20px 15px;
+  }
+  .footer-notice li {
+    float: left;
+    margin-right: 10px;
+  }
   .marquee span {
     text-align: center;
     color: #171c8f;
@@ -1317,6 +1425,22 @@ footer {
   .section7-instagram-banner ul li img {
     object-position: center;
     object-fit: cover;
+  }
+  /* footer */
+  footer .text_box p {
+    padding: 10px 0;
+  }
+
+  footer .des2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  footer .end {
+    text-align: center;
+    font-size: 20px;
+  }
+  footer .end p {
+    padding: 5px 0;
   }
 }
 @media (max-width: 728px) {
@@ -1740,5 +1864,56 @@ footer {
   }
   .section8-icon {
     width: 25px;
+  }
+
+  footer .des2 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  footer .end {
+    text-align: center;
+    font-size: 12px;
+  }
+  footer .end p {
+    padding: 5px 0;
+  }
+
+  .footer {
+    background-color: #f7f7f7;
+    padding: 30px 20px;
+  }
+  footer .row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
+  .footer-col {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer-col h4 {
+    margin-bottom: 25px;
+  }
+  .footer-logo {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 4;
+  }
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-notice li {
+    float: left;
+    margin-right: 10px;
+  }
+  .footer-col ul li {
+    font-size: 12px;
+  }
+  .footer-col ul li a {
+    font-size: 12px;
+  }
+  .footer .box {
+    padding-top: 30px;
   }
 }
