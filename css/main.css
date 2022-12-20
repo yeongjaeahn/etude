@@ -1034,14 +1034,11 @@ header {
   background-color: #f7f7f7;
   padding: 70px 100px;
 }
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-}
+
 footer .row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 footer .container {
   max-width: 100%;
@@ -1054,6 +1051,10 @@ footer .container {
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
+}
+
+.footer-notice li {
+  margin-right: 10px;
 }
 .footer-logo {
   display: flex;
