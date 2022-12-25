@@ -587,8 +587,6 @@ header {
 }
 .section4 .product-wrap {
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .section4 .product-wrap .product-banner {
@@ -646,6 +644,7 @@ header {
 /* .section4 .product-wrap .products .product-img:hover .product-hover {
   display: block;
 } */
+
 .product-info {
   padding: 15px 20px;
   background-color: #fafafa;
@@ -1288,6 +1287,10 @@ footer .box_wrap {
   .section4-intro .view-more {
     display: none;
   }
+  .section4 .product-wrap {
+    width: 100%;
+    height: 100%;
+  }
   .section4 .product-wrap .product-banner {
     width: 100%;
     height: 100%;
@@ -1327,6 +1330,7 @@ footer .box_wrap {
   /* section5 */
   .section5 {
     overflow-x: hidden;
+    padding: 0 0 100px 0;
   }
   .section5-items {
     width: 100%;
