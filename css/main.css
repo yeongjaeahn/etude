@@ -201,7 +201,9 @@ header {
   left: 120px;
   color: #ef426f;
 }
-
+.search-content input {
+  outline: none;
+}
 .search-menu {
   padding: 50px 0 0 50px;
   margin-left: auto;
