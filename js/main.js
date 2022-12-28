@@ -44,8 +44,10 @@ $(function () {
   // ------------비주얼 슬라이드 텍스트 끝
 
   // heade 찾기 , 메뉴 아이콘 close 생성,제거 스위치  로직
-  $('.menu-btn').click(function () {
+  $('.menu-btn').click(function (e) {
     $('.menu-modal-wrap').fadeToggle();
+    $('.menu-modal-wrap').css({ position: 'fixed' });
+
     $('.search-wrap').css({ display: 'none' });
     var src =
       $('.menu-btn a img').attr('src') === 'img/header/menu.png'
@@ -60,7 +62,7 @@ $(function () {
 
   $('.search-btn').click(function () {
     $('.search-wrap').fadeToggle();
-
+    $('.search-wrap').css({ position: 'fixed' });
     $('.menu-modal-wrap').css({ display: 'none' });
     var src =
       $('.search-btn a img').attr('src') === 'img/header/search.png'
