@@ -1007,6 +1007,7 @@ header {
 .box-wrap .box-content img {
   transition: all 1s;
   width: 100%;
+  display: block;
 }
 
 .box-wrap .box-content img:hover {
